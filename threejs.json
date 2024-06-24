@@ -1,0 +1,39 @@
+{
+    "library": "Three.js",
+    "description": "Three.js è una libreria JavaScript che consente la creazione di grafica 3D nel browser.",
+    "features": [
+        "Renderizzazione WebGL",
+        "Supporto per vari formati di modello 3D",
+        "Effetti post-processo",
+        "Ombre realistiche",
+        "Animazioni fisiche",
+        "Illuminazione avanzata"
+    ],
+    "usage": [
+        "Creazione di modelli 3D interattivi",
+        "Sviluppo di giochi basati su browser",
+        "Visualizzazione di dati scientifici",
+        "Creazione di esperienze VR/AR",
+        "Visualizzazione architettonica"
+    ],
+    "resources": {
+        "website": "https://threejs.org/",
+        "documentation": "https://threejs.org/docs/index.html",
+        "github": "https://github.com/mrdoob/three.js/",
+        "examples": "https://threejs.org/examples/",
+        "tutorials": [
+            {
+                "title": "Getting Started with Three.js",
+                "url": "https://threejsfundamentals.org/"
+            },
+            {
+                "title": "Three.js Crash Course",
+                "url": "https://www.youtube.com/watch?v=YK1Sw_hnm58"
+            }
+        ]
+    }
+}
+
+
+
+

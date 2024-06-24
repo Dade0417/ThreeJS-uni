@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+.navbar {
+    height: fit-content;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    transition: 0.4s ease;
+}
+
+.navbar.sticky {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    margin: 13px;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home:before {
+    z-index: 2;
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+    
+.home img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home h1 {
+    color: #fff;
+    position: relative;
+    font-size: 72px;
+    font-weight: 200;
+    text-align: center;
+    z-index: 3;
+}
+
+.home h1 span {
+    font-weight: 800;
+}
+
+.pagina1, .pagina3 {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.pagina2, .pagina4 {
+    padding: 100px 0;
+    background-color: #0e0e0e;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pagina2 .section-title, .pagina4 .section-title {
+    color: #fff;
+}
+
+.section-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 80px;
+    color: #666;
+}
+
+.pagina2 .section-description, .pagina4 .section-description {
+    color: #cccaca;
+}
+
+.features {
+    text-align: left;
+    margin-bottom: 80px;
+    margin-top: 60px;
+}
+
+.feature-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.pagina2 .feature-title {
+    color: #fff;
+}
+
+.feature-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.feature-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.pagina2 .feature-list li {
+    color: #cccaca;
+}
+
+.feature-list li span {
+    font-weight: 600;
+}
+
+.image-paragraphs {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-paragraph {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-paragraph:nth-child(1) {
+    margin-bottom: 80px;
+}
+
+.pagina2 .image-paragraph:nth-child(1) {
+    margin-bottom: 0;
+}
+
+.image-paragraph img {
+    width: 45%;
+    border-radius: 8px;
+    box-shadow: 1px 1px 20px 1px rgba(0,0,0,0.3);
+}
+
+.pagina2 .image-paragraph img {
+    box-shadow: 1px 1px 20px 1px rgba(255, 255, 255, 0.1);
+}
+
+.image-paragraph p {
+    width: 45%;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.pagina2 .image-paragraph p {
+    color: #cccaca;
+}
+
+.pagina3 {
+    padding-bottom: 20px;
+}
+
+.table-container {
+    width: 90%;
+    margin: 70px auto;
+    overflow-x: auto;
+    font-family: 'Inter', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-container th, .table-container td {
+    padding: 16px;
+    text-align: left;
+}
+
+.table-container th {
+    background-color: #000;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.table-container td {
+    background-color: #f9f9f9;
+}
+
+.table-container tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+.table-container a {
+    color: #328ee4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.table-container a:hover {
+    color: #045097;
+}
+
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #000;
+}
+
+.section-description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #666;
+}
+
+.crud {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background-color: #efefef;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.aggiungiPersona, .modificaPersona {
+    width: 100%;
+    height: fit-content;
+}
+
+.aggiungiPersona form, .modificaPersona form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aggiungiPersona form h3, .modificaPersona form h3 {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.aggiungiPersona form input, .modificaPersona form input {
+    width: 60%;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #fff;
+    padding: 13px 20px;
+    border-radius: 5px;
+    color: #000;
+    outline: none;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.aggiungiPersona form button, .modificaPersona form button {
+    width: 60%;
+    background-color: #000;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-bottom: 15px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.aggiungiPersona form #eliminaBtn {
+    background-color: rgb(228, 15, 15);
+    color: #fff;
+}
+
+.modificaPersona form #eliminaBtn:hover {
+    background-color: rgb(235, 35, 35);
+}
+
+.aggiungiPersona form button:hover, .modificaPersona form button:hover {
+    background-color: #2a2727;
+    color: #fff;
+}
+
+.aggiungiPersona form button:active, .modificaPersona form button:active {
+    transition: 0.2s;
+    scale: 0.95;
+}
+
+.listaPersone {
+    margin-top: 25px;
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: #efefef;
+    color: #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.listaPersone h3 {
+    text-align: center;
+}
+
+.listaPersone .persone {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.listaPersone .persone div {
+    height: fit-content;
+    width: 50%;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.listaPersone .persone div:nth-child(1) {
+    margin-top: 30px;
+}
+
+#selectPersona {
+    width: 60%;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #ffffff;
+    padding: 13px 20px;
+    border-radius: 5px;
+    color: #000;
+    outline: none;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+#selectPersona option {
+    padding: 10px;
+    font-weight: 400;
+    color: #000;
+    background-color: #ffffff;
+}
+
+.pagina4 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+

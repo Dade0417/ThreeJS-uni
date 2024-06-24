@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Three JS - Davide Stracciari</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./mediaqueries.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section class="navbar">
+            <ul>
+                <li><a href="#pagina1">INTRODUZIONE</a></li>
+                <li><a href="#pagina2">APPROFONDIMENTO</a></li>
+                <li><a href="#pagina3">JSON</a></li>
+                <li><a href="#pagina4">CRUD</a></li>
+            </ul>
+        </section>
+        
+        <section class="home">
+            <img src="./homebg.jpeg" alt="">
+            <h1><span>THREE</span><br>JS</h1>
+        </section>
+
+        <section class="pagina1" id="pagina1">
+            <div class="container">
+                <div class="content">
+                    <h1 class="section-title">Introduzione</h1>
+                    <p class="section-description">Three.js è una libreria JavaScript potente e versatile che consente di creare grafica 3D nel browser web senza bisogno di installare plugin aggiuntivi. Utilizzando WebGL, Three.js rende possibile creare scene 3D complesse con poche righe di codice.</p>
+                    <div class="features">
+                        <h2 class="feature-title">Cos'è WebGL?</h2>
+                        <ul class="feature-list">
+                            <li><span>Scene e Oggetti:</span> Creazione di scene 3D con oggetti come cubi, sfere e piani.</li>
+                            <li><span>Materiali e Texture:</span> Applicazione di materiali e texture per rendere gli oggetti realistici.</li>
+                            <li><span>Luci e Ombre:</span> Aggiunta di varie sorgenti di luce per migliorare la percezione di profondità e realismo.</li>
+                            <li><span>Animazioni:</span> Creazione di animazioni fluide per dare vita alle scene 3D.</li>
+                            <li><span>Interattività:</span> Implementazione di interazioni dell'utente come rotazioni, zoom e click.</li>
+                        </ul>
+                    </div>
+                    <div class="image-paragraphs">
+                        <div class="image-paragraph">
+                            <img src="immaginegif.gif" alt="Left Image">
+                            <p>Three.js semplifica notevolmente il processo di creazione di grafica 3D nel browser, permettendo agli sviluppatori di concentrarsi sul design e la logica dell'applicazione piuttosto che sulla complessità tecnica del rendering 3D.</p>
+                        </div>
+                        <div class="image-paragraph">
+                            <p>Con Three.js, è possibile creare visualizzazioni 3D accattivanti per giochi, visualizzazioni di dati, simulazioni e molto altro ancora, offrendo un'ampia gamma di possibilità creative per progetti web avanzati.</p>
+                            <img src="immaginegif2.gif" alt="Right Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pagina2" id="pagina2">
+            <div class="container">
+                <div class="content">
+                    <h1 class="section-title">Approfondimento</h1>
+                    <p class="section-description">Three.js è utilizzata in vari settori per creare effetti visivi accattivanti e interazioni 3D coinvolgenti. Questa sezione esplora alcune delle applicazioni avanzate e delle tecniche utilizzate con Three.js.</p>
+                    <div class="features">
+                        <h2 class="feature-title">Applicazioni Avanzate</h2>
+                        <ul class="feature-list">
+                            <li><span>Visualizzazioni di Dati:</span> Creazione di grafici e visualizzazioni di dati interattivi per analisi complesse.</li>
+                            <li><span>Simulazioni:</span> Simulazione di fenomeni fisici come fluidi, gas e particelle.</li>
+                            <li><span>Realtà Virtuale:</span> Sviluppo di esperienze di realtà virtuale (VR) e aumentata (AR) immersive.</li>
+                            <li><span>Giochi:</span> Progettazione di giochi 3D con grafica dettagliata e interazioni dinamiche.</li>
+                            <li><span>Architettura:</span> Creazione di modelli architettonici per visualizzazioni realistiche di edifici e ambienti.</li>
+                        </ul>
+                    </div>
+                    <div class="image-paragraphs">
+                        <div class="image-paragraph">
+                            <img src="immaginegrafico.png" alt="Left Image">
+                            <p>Le visualizzazioni di dati con Three.js consentono agli utenti di esplorare dataset complessi in modo intuitivo e interattivo, rendendo l'analisi dei dati più accessibile e interessante.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pagina3" id="pagina3">
+            <div class="container">
+                <div class="content">
+                    <h1 class="section-title">JSON</h1>
+                    <div id="jsonContainer" class="jsonContainer"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pagina4" id="pagina4">
+            <div class="container">
+                <div class="content">
+                    <h1 class="section-title">CRUD</h1>
+                </div>
+                <div class="crud">
+                    <div class="aggiungiPersona">
+                        <form>
+                            <h3>Aggiungi/Elimina persona</h3>
+                            <input type="text" id="nomeAE" name="nome" placeholder="Nome">
+                            <input type="text" id="cognomeAE" name="cognome" placeholder="Cognome">
+                            <button id="aggiungiBtn">Aggiungi</button>
+                            <button id="eliminaBtn">Elimina</button>
+                        </form>
+                    </div>
+                    <div class="modificaPersona">
+                        <form>
+                            <h3>Modifica persona</h3>
+                            <select id="selectPersona">
+                                <option value="Seleziona una persona" able selected>Seleziona una persona</option>
+                            </select>
+                            <input type="text" id="nomeM" name="nome" placeholder="Nuovo nome">
+                            <input type="text" id="cognomeM" name="cognome" placeholder="Nuovo cognome">
+                            <button id="modificaBtn">Modifica</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="listaPersone">
+                    <h3>Lista persone</h3>
+                    <div class="persone" id="listaPersone">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
+
+
+

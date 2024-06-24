@@ -1,0 +1,144 @@
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .navbar ul li a {
+        font-size: 12px;
+        margin: 6px;
+    }   
+
+    .home h1 {
+        font-size: 35px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .section-description {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .features {
+        margin-left: 30px;
+        margin-bottom: 50px;
+    }
+
+    .feature-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .feature-list li {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .image-paragraph {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-paragraph img {
+        width: 90%;
+        margin-bottom: 20px;
+        order: -1;
+    }
+
+    .image-paragraph p {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .crud {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aggiungiPersona, .modificaPersona {
+        width: 90%;
+    }
+
+    .modificaPersona form h3 {
+        margin-top: 35px;
+    }
+
+    .aggiungiPersona form input, .modificaPersona form input, .aggiungiPersona form button, .modificaPersona form button, #selectPersona {
+        width: 80%;
+    }
+
+    .listaPersone {
+        width: 90%;
+    }
+
+    .listaPersone .persone div {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .navbar ul li a {
+        font-size: 10px;
+        margin: 4px;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .section-description {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .feature-title {
+        font-size: 18px;
+    }
+
+    .feature-list li {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .image-paragraph img {
+        margin-bottom: 15px;
+    }
+
+    .image-paragraph p {
+        font-size: 14px;
+    }
+
+    .crud {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .aggiungiPersona, .modificaPersona {
+        width: 100%;
+    }
+
+    .listaPersone .persone div {
+        width: 80%;
+    }
+}
+
+
+
